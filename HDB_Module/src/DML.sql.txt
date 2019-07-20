@@ -1,0 +1,37 @@
+INSERT INTO "myCDS.employees" VALUES(1,'Christine','Jones','Manager');
+INSERT INTO "myCDS.employees" VALUES(2,'Eric','Thomas','Manager');
+INSERT INTO "myCDS.employees" VALUES(3,'Rita','Miller','Director');
+INSERT INTO "myCDS.employees" VALUES(4,'Sachin','Gupta','Director');
+INSERT INTO "myCDS.employees" VALUES(5,'Doreen','Anderson','Project Manager');
+INSERT INTO "myCDS.employees" VALUES(6,'Pierre','Dufour','Manager');
+INSERT INTO "myCDS.employees" VALUES(7,'Cheung','Zhou','Director');
+INSERT INTO "myCDS.employees" VALUES(8,'Henk','den Berg','Director');
+INSERT INTO "myCDS.employees" VALUES(9,'Sarah','Jackson','Senior Manager');
+INSERT INTO "myCDS.employees" VALUES(10,'Alex','Smith','Executive Manager');
+
+
+INSERT INTO "myCDS.more_employees" VALUES(11,'Javier','Hernandez','Manager');
+INSERT INTO "myCDS.more_employees" VALUES(12,'Angela','Sanders','Manager');
+
+INSERT INTO "myCDS.facts" VALUES (1,1,'2016-10-01',829);
+INSERT INTO "myCDS.facts" VALUES (2,2,'2016-10-01',142);
+INSERT INTO "myCDS.facts" VALUES (3,3,'2016-10-01',942);
+INSERT INTO "myCDS.facts" VALUES (4,4,'2016-10-01',324);
+INSERT INTO "myCDS.facts" VALUES (5,5,'2016-10-01',934);
+INSERT INTO "myCDS.facts" VALUES (2,6,'2015-10-01',643);
+INSERT INTO "myCDS.facts" VALUES (3,7,'2015-10-01',245);
+INSERT INTO "myCDS.facts" VALUES (3,8,'2014-10-01',945);
+INSERT INTO "myCDS.facts" VALUES (4,9,'2015-10-01',878);
+INSERT INTO "myCDS.facts" VALUES (4,10,'2014-10-01',138);
+INSERT INTO "myCDS.facts" VALUES (1,1,'2016-11-01',827);
+INSERT INTO "myCDS.facts" VALUES (2,2,'2016-11-01',765);
+INSERT INTO "myCDS.facts" VALUES (3,3,'2016-11-01',178);
+INSERT INTO "myCDS.facts" VALUES (4,4,'2016-11-01',382);
+INSERT INTO "myCDS.facts" VALUES (5,5,'2016-11-01',145);
+INSERT INTO "myCDS.facts" VALUES (6,6,'2016-11-01',612);
+INSERT INTO "myCDS.facts" VALUES (7,7,'2016-11-01',123);
+INSERT INTO "myCDS.facts" VALUES (8,8,'2016-11-01',853);
+INSERT INTO "myCDS.facts" VALUES (9,9,'2016-11-01',824);
+INSERT INTO "myCDS.facts" VALUES (10,10,'2016-11-01',928);
+INSERT INTO "myCDS.facts" VALUES (11,10,'2016-11-01',145);
+INSERT INTO "myCDS.facts" VALUES (12,10,'2016-11-01',134);
