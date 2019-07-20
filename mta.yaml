@@ -1,0 +1,16 @@
+ID: mySDI
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: HDB_Module
+   type: hdb
+   path: HDB_Module
+   requires:
+    - name: hdi_HDB_Module
+
+resources:
+ - name: hdi_HDB_Module
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
