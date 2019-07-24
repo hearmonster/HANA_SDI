@@ -1,22 +1,25 @@
 context myCDS {
-   entity employees {
-      key EMP_ID : Integer not null;
-      FNAME : String(20);
-      LNAME : String(20);
-      ROLE : String(20);
-   };
+    entity employees {
+        key EMP_ID : Integer not null;
+            FNAME  : String(20);
+            LNAME  : String(20);
+            ROLE   : String(20);
+    };
 
-   entity more_employees {
-      key EMP_ID : Integer not null;
-      FNAME : String(20);
-      LNAME : String(20);
-      ROLE : String(20);
-   };
+    /*@@layout{"layoutInfo":{"x":-235.357421875,"y":74}}*/
+    entity more_employees {
+        key EMP_ID : Integer not null;
+            FNAME  : String(20);
+            LNAME  : String(20);
+            ROLE   : String(20);
+    };
 
-   entity facts {
-      EMP_ID : Integer not null;
-      TEAM_ID : Integer;
-      DATE : LocalDate;
-      REVENUE_EARNED : Integer;
-   };
+    /*@@layout{"layoutInfo":{"x":139.693359375,"y":-55}}*/
+    entity facts {
+    //Added Composite Key on (EMP_ID, TEAM_ID and DATE) to fix constraint issue when loading to Target Table
+        key EMP_ID         : Integer not null;	
+        key TEAM_ID        : Integer not null;
+        key DATE           : LocalDate not null;
+        REVENUE_EARNED : Integer;
+    };
 };
