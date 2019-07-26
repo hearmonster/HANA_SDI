@@ -1,4 +1,5 @@
 context myCDS {
+	//Employees table - contains 10 employees
     entity employees {
         key EMP_ID : Integer not null;
             FNAME  : String(20);
@@ -7,6 +8,7 @@ context myCDS {
     };
 
     /*@@layout{"layoutInfo":{"x":-235.357421875,"y":74}}*/
+	//2nd Employees table - contains 2 employees. Used to demonstrate a simple UNION with the Employees table above
     entity more_employees {
         key EMP_ID : Integer not null;
             FNAME  : String(20);
@@ -15,6 +17,7 @@ context myCDS {
     };
 
     /*@@layout{"layoutInfo":{"x":139.693359375,"y":-55}}*/
+    //Facts table - provides revenue figures (by date) for each employee.  Note that Employees may belong to more than one TEAM. And they may generate revenue on more than one day
     entity facts {
     //Added Composite Key on (EMP_ID, TEAM_ID and DATE) to fix constraint issue when loading to Target Table
         key EMP_ID         : Integer not null;	
@@ -22,4 +25,14 @@ context myCDS {
         key DATE           : LocalDate not null;
         REVENUE_EARNED : Integer;
     };
+    
+    //History Preserving demo
+    entity employees_history {
+		key	SURR_ID : Integer not null;  //Surrogate key. Will be populated by a SEQUENCE
+		key	EMP_ID : Integer not null;
+			FNAME : String(20);
+			LNAME : String(20);
+			ROLE : String(20);
+   };
+
 };

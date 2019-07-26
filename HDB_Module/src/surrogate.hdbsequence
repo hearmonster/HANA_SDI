@@ -1,0 +1,3 @@
+SEQUENCE "surrogate"
+RESET BY SELECT IFNULL(MAX(SURR_ID), 0) + 1 
+FROM "myCDS.employees_history"
