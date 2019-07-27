@@ -33,6 +33,7 @@ context myCDS {
 			FNAME : String(20);
 			LNAME : String(20);
 			ROLE : String(20);
-   };
+			CHANGE_TYPE : String(1); 
+			CHANGE_TIME : UTCTimestamp;     };
 
 };
